@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <!-- Linking vanila CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Linking tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-10 font-semibold"><span class="heading-color1">Lets Calculate Some </span> <span class="heading-color2">Money</span>!!!</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 text-white text-center">
+                <div class="bg-lime-700 p-8 rounded">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4 class="text-5xl">$<span id="deposit-amount">00</span></h4>
+                </div>
+                <div class="bg-green-600 p-8 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-5xl">$<span id="withdraw-amount">00</span></h4>
+                </div>
+                <div class="bg-teal-600 p-8 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-5xl">$<span id="balance-amount">1246</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw input field -->
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-emerald-500 p-6 rounded">
+                    <h4 class="text-4xl text-center mb-6 text-white">Please Deposit</h4>
+                    <input type="text" placeholder="$ Deposit amount" id="deposit-field" class="border border-sky-500 block mx-auto w-3/4 p-3 rounded text-2xl">
+                    <button class="mx-auto block bg-orange-500 mt-6 p-4 rounded text-white text-2xl" id="deposit-submit-btn">Submit Deposit</button>
+                </div>
+                <div class="bg-indigo-500 p-6 rounded">
+                    <h4 class="text-4xl text-center mb-6 text-white">Please Withdraw</h4>
+                    <input type="text" placeholder="$ Withdraw amount" id="withdraw-field" class="border border-sky-500 block mx-auto w-3/4 p-3 rounded text-2xl">
+                    <button class="mx-auto block bg-cyan-500 mt-6 p-4 rounded text-white text-2xl" id="withdraw-submit-btn">Submit Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
